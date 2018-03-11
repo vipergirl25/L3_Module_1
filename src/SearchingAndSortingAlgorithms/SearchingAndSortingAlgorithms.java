@@ -14,12 +14,12 @@ public class SearchingAndSortingAlgorithms {
 	 **/
 
 	/* 1. Create a method that will find return the first index of a broken egg */
-	@Test
-	public void testSearch() {
-		List<String> eggs = Arrays.asList(new String[] { "whole", "whole", "whole", "whole", "cracked", "whole", "whole", "whole",
-				"cracked", "whole", "whole", "whole" });
-		assertEquals(4, Algorithms.findBrokenEgg(eggs));
-	}
+//	@Test
+//	public void testSearch() {
+//		List<String> eggs = Arrays.asList(new String[] { "whole", "whole", "whole", "whole", "cracked", "whole", "whole", "whole",
+//				"cracked", "whole", "whole", "whole" });
+//		assertEquals(4, Algorithms.findBrokenEgg(eggs));
+//	}
 
 	/* 2. Count how many oysters contain pearls. */
 //	@Test
@@ -37,15 +37,15 @@ public class SearchingAndSortingAlgorithms {
 //	}
 
 	/* 4. Create a method that will find the longest word. */
-//	@Test
-//	public void testFindMaxiumumString() throws Exception {
-//		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
-//				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
-//				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
-//				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
-//				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
-//		assertEquals("circumlocution", Algorithms.findLongestWord(words));
-//	}
+	@Test
+	public void testFindMaxiumumString() throws Exception {
+		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
+				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
+				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
+				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
+				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
+		assertEquals("circumlocution", Algorithms.findLongestWord(words));
+	}
 
 	/*
 	 * 5. The Morse code for SOS is "... --- ..."
@@ -73,14 +73,14 @@ public class SearchingAndSortingAlgorithms {
 //	}
 
 	/* 8. Sort the DNA sequences by length from shortest to longest. */
-//	@Test
-//	public void testSortStringLength() throws Exception {
-//		List<String> unsortedSequences = Arrays.asList(new String[] { "ATAGCTGATCGTAGCTACGTACGATCG", "CATCGTACATGC", "TATGTGT",
-//				"GCTGATCGTGACTGTAC", "ACTGT" });
-//		List<String> sortedSequences = Arrays.asList(new String[] { "ACTGT", "TATGTGT", "CATCGTACATGC", "GCTGATCGTGACTGTAC",
-//				"ATAGCTGATCGTAGCTACGTACGATCG" });
-//		assertEquals(sortedSequences, Algorithms.sortDNA(unsortedSequences));
-//	}
+	@Test
+	public void testSortStringLength() throws Exception {
+		List<String> unsortedSequences = Arrays.asList(new String[] { "ATAGCTGATCGTAGCTACGTACGATCG", "CATCGTACATGC", "TATGTGT",
+				"GCTGATCGTGACTGTAC", "ACTGT" });
+		List<String> sortedSequences = Arrays.asList(new String[] { "ACTGT", "TATGTGT", "CATCGTACATGC", "GCTGATCGTGACTGTAC",
+				"ATAGCTGATCGTAGCTACGTACGATCG" });
+		assertEquals(sortedSequences, Algorithms.sortDNA(unsortedSequences));
+	}
 
 	/*
 	 * 9. Sort the words in alphabetical order. Your teacher may need to explain compareTo.
